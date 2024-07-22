@@ -1,0 +1,54 @@
+:root{
+    --main-color:rgb(0 74 167);
+}
+
+header{
+    width:100%;
+}
+.img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+.img>img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+nav{
+    background: var(--main-color) !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav a:hover{
+    color: red !important;
+}
+a{
+    text-decoration: none !important;
+}
+li{
+    list-style: none;
+}
+.about{
+    background:#f4f4f4;
+}
+
+.read-more{
+    width: 100% ;
+    background: var(--main-color) !important;
+    color:white;
+    margin:5px;
+}
+@media screen and (max-width: 480px) {
+    .container{
+        width: 100%;
+    }
+    .img{
+        width: 100px;
+        height: 100px;
+    }
+}
